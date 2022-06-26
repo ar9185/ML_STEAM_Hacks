@@ -1,10 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Mission</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+
+
 <body>
-$END$
+  <script src="mission.js"></script>
+
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="stats.html">Statistics</a>
+
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <h1> <center> Our Mission </center></h1>
+  <h3><center>Stay Cruelty Free is built by a team of four high
+  school students that are passionate about social justice issues, including human and animal rights. </center></h3>
+
+  <h3><center> We built this website to inform and educate others about brands that conduct testing on animals or mistreat their laborers. </center></h3>
+
+
 </body>
+
+    <script>
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+  </script>
+
+
 </html>
