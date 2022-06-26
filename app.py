@@ -1,7 +1,3 @@
-from keras.models import load_model
-from PIL import Image, ImageOps
-import numpy as np
-import os
 
 #API
     var ourBrands = [
@@ -163,6 +159,16 @@ import os
 
 ];
 
+from keras.models import load_model
+from PIL import Image, ImageOps
+import numpy as np
+import os
+import json
+
+
+image_file=open("myfile.json")
+file=json.load(image_file)
+print(file)
 
 # Load the model
 model = load_model('keras_model.h5')
@@ -172,8 +178,11 @@ model = load_model('keras_model.h5')
 # determined by the first position in the shape tuple, in this case 1.
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 # Replace this with the path to your image
-for pic in os.listdir("./test_images"):
-    path = os.path.join("test_images", pic)
+for pic in file:
+    path=os.path.abspath(file[pic])
+    print(path)
+    print(file[pic])
+    #path = os.path.join("test_images", pic)
     image = Image.open(path)
 #resize the image to a 224x224 with the same strategy as in TM2:
 #resizing the image to be at least 224x224 and then cropping from the center
@@ -193,3 +202,4 @@ for pic in os.listdir("./test_images"):
     print(prediction)
     print("image:", path)
     print("model's guess:", labels[np.argmax(prediction)])
+
