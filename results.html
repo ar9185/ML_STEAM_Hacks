@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Stay Cruelty Free</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="mission.html">Our Mission</a>
+  <a href="stats.html">Statistics</a>
+
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+   <img src="https://github.com/ar9185/ML_STEAM_Hacks/blob/main/logo.png?raw=true" alt="Logo" width = "50" height = "50">
+
+  <body>
+    <script src="script.js"></script>
+    <center>
+
+    <h1>Clinique is ... </h1>
+    <h2>Cruelty-free!</h2>
+    <h2>Continue to use this brand!</h2>
+      <h2>Reload to retest.</h2>
+
+    </center></body>
+
+      <script>
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+  </script>
+<style>
+    html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "Lucida Console", monospace;
+  background-color: darkseagreen;
+  color: darkolivegreen;
+}
+
+h1 {
+  font-family: "Courier New", monospace;
+  font-size: 50px;
+}
+
+p {
+  font-size: 15px;
+}
+
+button:hover {
+  filter:sepia(50%);
+}
+
+.ourForm {
+
+  font-size: 30px;
+}
+
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+</style>
+</html>
